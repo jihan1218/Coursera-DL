@@ -295,5 +295,5 @@ def print_mislabeled_images(classes, X, Y, p):
         plt.imshow(X[:, index].reshape(64, 64, 3), interpolation="nearest")
         plt.axis("off")
         plt.title(
-            "Prediction: " + classes[int(p[0, index])].decode("utf-8") + " \n Class: " + classes[y[0, index]].decode(
+            "Prediction: " + classes[int(p[0, index])].decode("utf-8") + " \n Class: " + classes[Y[0, index]].decode(
                 "utf-8"))
