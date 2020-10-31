@@ -91,7 +91,7 @@ def initialize_parameters_deep(layer_dims):
 def linear_forward(A, W, b):
     Z = np.dot(W, A) + b
 
-    assert (Z.shape == (W.shape[0], W.shape[1]))
+    assert (Z.shape == (W.shape[0], A.shape[1]))
     cache = (A, W, b)
 
     return Z, cache
